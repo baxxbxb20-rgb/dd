@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 400px; /* Mobile width */
+    background: white;
+    padding-bottom: 80px; /* Space for nav */
+}
+
+/* Hero Section */
+.hero-section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* Stories */
+.stories-section {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.stories-container {
+    display: flex;
+    gap: 15px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.border-gradient {
+    border: 2px solid #8e44ad; /* Example purple border */
+}
+
+/* States Grid */
+.states-section {
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.states-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 15px;
+}
+
+.state-card {
+    height: 120px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Make Abuja and Kano taller like in the image */
+.state-card.tall {
+    grid-row: span 1;
+    height: 160px;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background: #007bff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: white;
+}
+
+.nav-item {
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    opacity: 1;
+}
+
+.nav-item p {
+    font-size: 0.7rem;
+    margin-top: 2px;
+}
